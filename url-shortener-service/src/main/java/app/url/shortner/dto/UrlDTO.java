@@ -20,9 +20,5 @@ import lombok.Value;
 @Value
 @Builder
 public class UrlDTO {
-
     Long id;
-    String nome;
-    Integer votos;
-
 }

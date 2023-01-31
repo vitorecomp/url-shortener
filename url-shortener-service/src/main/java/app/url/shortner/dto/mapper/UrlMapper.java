@@ -3,8 +3,11 @@ package app.url.shortner.dto.mapper;
 import java.util.List;
 
 import javax.ws.rs.client.Entity;
+
 import org.mapstruct.Mapper;
+
 import app.url.shortner.domain.Url;
+import app.url.shortner.dto.UrlDTO;
 
 
 /**

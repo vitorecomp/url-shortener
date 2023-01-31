@@ -5,8 +5,18 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
-public class Url {
-    int id;
+import javax.persistence.Entity;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
+
+@Entity
+@Data
+@ToString
+@EqualsAndHashCode(of = "nome", callSuper = false)
+public class Url  extends AbstractEntity{
 
     String baseurl;
     String shortUrl;
